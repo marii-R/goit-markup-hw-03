@@ -32,8 +32,11 @@ a {
     max-width: 1158px;
     padding-bottom: 120px;
 }
+.img {
+    display: block;
+}
 
-button {
+.button {
     cursor: pointer;
 }
 
@@ -133,6 +136,8 @@ button {
     width: 1440px;
     height: 600px;
     background-color: #2e2f42;
+    padding-top: 188px;
+    padding-bottom: 188px;
     
 }
  
@@ -147,34 +152,27 @@ button {
 }
 
 .hero-title {
+    max-width: 496px;
     font-weight: 700;
     font-size: 56px; 
     text-align: center;
     color: #fff;
 }
 
-.bottom-container {
-    padding-top: 356px;
-    padding-bottom: 188px;
-    
-}
-
 .hero-btn {
-    font-family: "Roboto", sans-serif;
-    width: 169px;
-    height: 56px;
-    border-radius: 4px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-    border: none;
-    color: #fff;
-    background: #4d5ae5;
-    margin-left: 635px;
-    margin-right: 636px;
-    margin-top: 48px;
-    
+font-family: "Roboto", sans-serif;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.04em;
+color: #fff;
+background-color: #4d5ae5;
+display: block;
+min-width: 169px;
+height: 56px;
+border: none;
+border-radius: 4px;
+cursor: pointer;
     
 }
 .hero-btn:hover,.hero-btn:focus {
@@ -185,7 +183,8 @@ button {
 
 /* #region Features */
 .features {
-    margin-top: 120px;
+    padding-top: 120px;
+    padding-bottom: 120px;
     margin-left: 156px;
     margin-right: 156px;
     width: 1128px;
@@ -237,12 +236,18 @@ button {
 
 /* #region Team*/
 .team {
-    margin-top: 120px;
+    padding-top: 120px;
+    padding-bottom: 120px;
     margin-left: 156px;
     margin-right: 156px;
     width: 1440px;
     height: 780px;
     background-color: #F4F4FD
+}
+
+.team-container {
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .team-title {
@@ -254,13 +259,14 @@ button {
     text-transform: capitalize;
     text-align: center;
     color: #2e2f42;
+    margin-bottom: 8px;
 }
 
 .team-list {
     display: flex;
     gap: 24px;
     justify-content: center;
-    width: calc((100%-72px)÷4);
+    width: calc((100%-72px)/4);
     margin-top: 72px;
     
 }
@@ -312,6 +318,8 @@ button {
     height: 1000px;
     margin-left: 156px;
     margin-right: 156px;
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 .portfolio-title {
     font-weight: 700;
@@ -322,8 +330,15 @@ button {
     text-transform: capitalize;
     text-align: center;
     color: #2e2f42;
+    margin-bottom: 72px;
 }
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
 
+}
 .part-first-portfolio {
     display: flex;
     gap: 24px;
@@ -342,6 +357,17 @@ button {
 
 .portfolio-cards {
     border-bottom: 1px solid #e7e9fc;
+    width: calc((100%-48px)/3);
+}
+.part-of-portfolio {
+   padding: 32px 16px; 
+   border: 1px solid #e7e9fc;
+   border-top: none;
+
+}
+
+.imagine-block {
+    display: block;
 }
 
 .portfolio-item {
@@ -351,6 +377,7 @@ button {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-bottom: 8px;
 }
 
 .portfolio-text {
@@ -364,6 +391,8 @@ button {
 
 /* #region footer */
 .footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
     background-color: #2e2f42;
     width: 1440px;
     height: 312px;
@@ -385,6 +414,8 @@ button {
     text-transform: uppercase;
     color: #4d5ae5;
     padding-bottom: 16px;
+    display: inline-block;
+    margin-bottom: 16px;
     
 }
 
@@ -396,6 +427,8 @@ button {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #f4f4fd;
+    display: inline-block;
+    margin-bottom: 16px;
     
     
 }
